@@ -126,6 +126,23 @@ td {
 tr:hover {
     background-color: #ff00513d;  /* Resaltar fila con un tono rosa suave */
 }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 (altura proporcional al ancho) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000; /* Fondo negro para el área del video */
+    margin: 0 auto;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* Footer */
 footer {
